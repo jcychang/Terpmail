@@ -6,11 +6,29 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>University of Maryland TERPmail</title>
 
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="//s3.amazonaws.com/umdheader.umd.edu/app/js/main.min.js"></script>
+	<script> umdHeader.init(); </script>
+  <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-101937676-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <style type="text/css">
     body {
-      background: url('./grayscale-MD.png') no-repeat;
+      background: url('./grayscale-MD.png');
       background-size: cover;
     }
     a {
@@ -27,13 +45,13 @@
       box-shadow: 0px 0px 5px #888888;
     }
     .jumbotron {
-      background: url('./banner50.png') no-repeat center;
+      background: url('./Terpmail-header.png') no-repeat center;
       background-size: cover;
       background-color: transparent;
       margin-bottom: 0;
     }
     .row {
-      background-color: #eee;
+      /*background-color: #eee;*/
     }
     .banner {
       padding-right: 0px;
@@ -59,12 +77,11 @@
   </style>
 </head>
 <body>
+  <div id ="umd-frame" class="margin-top10" role="main">
   <div class="container">
     <div class="row banner">
       <div class="col-sm-12 banner">
         <div class="jumbotron">
-          <h1>TERPmail</h1>
-          <p>Welcome to University of Maryland TERPmail</p>
         </div>
       </div>
       <div class="col-sm-12 banner">
@@ -96,39 +113,23 @@
       <div class="col-sm-12">
         <h2>TERPmail Services</h2>
       </div>
-      <div class="col-sm-6 col-md-3">
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
         <div class="thumbnail">
-          <img src="./terpmaillogo.png" alt="TERPmail">
           <div class="caption">
-            <p>E-mail and calendar.</p>
-            <p><a href="http://mail.terpmail.umd.edu/new" target="_blank" class="btn btn-primary" role="button">Login to TERPmail</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="thumbnail">
-          <img src="./terpmaillogo.png" alt="TERPmail">
-          <div class="caption">
-            <p>TERPmail accounts are available to all students.</p>
-            <p><a href="https://umd.service-now.com/itsc?id=kb_article&article=KB0010862" class="btn btn-primary" target="_blank" role="button">Create an Account</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="thumbnail">
-          <img src="./terpmaillogo.png" alt="TERPmail">
-          <div class="caption">
-            <p>New to TERPmail or forgot your password?</p>
-            <p><a href="https://terpmail.umd.edu/cgi-bin/password" target="_blank" class="btn btn-primary" role="button">Set Your Password</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="thumbnail">
-          <img src="./terpmaillogo.png" alt="TERPmail">
-          <div class="caption">
-            <p>Additional information about the TERPmail service.</p>
-            <p><a href="https://umd.service-now.com/itsc?id=kb_article&article=KB0010450" class="btn btn-primary" target="_blank" role="button">Read the FAQ</a></p>
+            <div class="row">
+              <div class="col-sm-offset-3 col-sm-3">
+                <img src="./terpmaillogo.png" alt="TERPmail">
+                <p>E-mail and calendar.</p>
+                <p><a href="http://mail.terpmail.umd.edu/new" target="_blank" class="btn btn-primary" role="button">Login to TERPmail</a></p>
+              </div>
+              <div class="col-sm-3">
+                <p><a href="https://umd.service-now.com/itsc?id=kb_article&article=KB0010862" target="_blank">Create an Account</a></p>
+                <p><a href="https://terpmail.umd.edu/cgi-bin/password" target="_blank">Set Your Password</a></p>
+                <p><a href="https://umd.service-now.com/itsc?id=kb_article&article=KB0010450" target="_blank">Read the FAQ</a></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -140,9 +141,33 @@
         <h3>Want to increase the security of your TERPmail login?</h3>
         <h4>Consider <a href="https://www.itsc.umd.edu/MRcgi/MRTicketPage.pl?USER=&MRP=0&PROJECTID=1&MR=152781" target="_blank">2-step verification</a></h4>
         <hr>
-        <p>NOTICE: Unauthorized access to this computer is in violation of Md. Annotated Code, Criminal Law Article §§ 8-606 and 7-302 and the Computer Fraud and Abuse Act, 18 U.S.C. §§ 1030 et seq. The University may monitor use of its computing resources as permitted by state and federal law, including the Electronic Communications Privacy Act, 18 U.S.C. §§ 2510-2521 and the Md. Annotated Code, Courts and Judicial Proceedings Article, Section 10, Subtitle 4. Anyone using this system acknowledges that all use is subject to University of Maryland Policy on the Acceptable Use of Information Technology Resources available at <a href="http://www.nethics.umd.edu/aup" target="_blank">http://www.nethics.umd.edu/aup</a>.</p>
+        <p>NOTICE: Unauthorized access to this system is in violation of Md. Annotated Code, Criminal Law Article §§ 8-606 and 7-302 and the Computer Fraud and Abuse Act, 18 U.S.C. §§ 1030 et seq. The University may monitor use of its IT resources as permitted by state and federal law, including the Electronic Communications Privacy Act, 18 U.S.C. §§ 2510-2521 and the Md. Annotated Code, Courts and Judicial Proceedings Article, Section 10, Subtitle 4. Anyone using this system acknowledges that all use is subject to University of Maryland Policy on the Acceptable Use of Information Technology Resources available at <a href="http://www.umd.edu/aup" target="_blank">http://www.umd.edu/aup</a>.</p>
         <p>By logging in to this/these application(s) I acknowledge and agree to all terms and conditions regarding my access and the information contained therein.</p>
       </div>
+    </div>
+    <div class="row">
+      <footer>
+  			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <hr>
+  				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding-bottom:20px;">
+  					<a href="https://it.umd.edu"><img alt="Terrapin Tech" class="img-responsive center-block" src="https://it.umd.edu/sites/divisionofit.umd.edu/files/UMDimages/homepage/dit-logo.png" style="margin-left:22%; width: 60%" /></a>
+  				</div>
+  				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding-bottom:20px;text-align:center">
+  					<p style="font-weight: 700">Division of Information Technology</p>
+  					<span>University of Maryland</span><br/>
+  					<span style="font-size: 12px">301.405.1500 | <a href="mailto:itsc@umd.edu">itsc@umd.edu</a>| © 2017 All rights reserved</span><br/>
+  					<span><a href="https://umd.edu/web-accessibility" target="_blank"><strong>Web Accessibility</strong></a></span>
+  				</div>
+  				<div class="col-md-4 col-sm-12 col-xs-12 center-block img-margin">
+  					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 social-icons" ><a href="https://www.facebook.com/DivisionofIT.UMD" target="_blank"><img alt="DIT on Facebook" class="img-responsive " src="https://it.umd.edu/sites/divisionofit.umd.edu/files/Facbook-58x58.png" /></a></div>
+  					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 social-icons" ><a href="https://twitter.com/ithelpumd" target="_blank"><img alt="DIT on Twitter" class="img-responsive " src="https://it.umd.edu/sites/divisionofit.umd.edu/files/Twitter-58x58.png" /></a></div>
+  					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 social-icons" ><a href="https://www.flickr.com/photos/148078255@N06/" target="_blank"><img alt="DIT on Flickr" class="img-responsive " src="https://it.umd.edu/sites/divisionofit.umd.edu/files/Flicker-58x58.png" /></a></div>
+  					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 social-icons" ><a href="https://www.instagram.com/umdit/" target="_blank"><img alt="DIT on Instagram" class="img-responsive " src="https://it.umd.edu/sites/divisionofit.umd.edu/files/Instagram-58x58.png" /></a></div>
+  					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 social-icons" ><a href="https://www.youtube.com/channel/UCwBRNidtjNfT1mPNtqWYVNg" target="_blank"><img alt="DIT on YouTube" class="img-responsive " src="https://it.umd.edu/sites/divisionofit.umd.edu/files/YouTube-58x58.png" /></a></div>
+  					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 social-icons"><a href="https://www.linkedin.com/school/3638" target="_blank"><img alt="UMD on LinkedIn" class="img-responsive " src="https://it.umd.edu/sites/divisionofit.umd.edu/files/LinkedIn-58x58.png" /></a></div>
+  				</div>
+  			</div>
+  		</footer>
     </div>
   </div>
 </body>
