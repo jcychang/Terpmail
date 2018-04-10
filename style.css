@@ -26,8 +26,8 @@
 }
 
 body {
-  background: url('./grayscale-MD.png');
-  background-size: cover;
+  /* background: url('./grayscale-MD.png');
+  background-size: cover; */
 }
 a {
   color: #c81f23;
