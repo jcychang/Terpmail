@@ -15,13 +15,51 @@
 	background: none !important;
 }
 
-.dit-logo{
+.dit-logo {
 	width:24%;
 	margin:0 0 20px 58px
 }
 
-.margin-top10{
+.margin-top10 {
 	margin-top: 10px
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #9e9e9e;
+}
+
+.terplinks h4 a:focus {
+  color: #c81f23;
+}
+
+.terplinks h5 a:focus {
+  color: #c81f23;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #c81f23;
+    background-color: #ffffff;
+    border-color: #c81f23;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-nav {
+    display: table !important;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-nav > li {
+    float: none;
+    display: table-cell !important;
+    text-align: center;
+  }
 }
 
 body {
